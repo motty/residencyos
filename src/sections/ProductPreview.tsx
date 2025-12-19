@@ -116,8 +116,8 @@ export function ProductPreview() {
                 {/* Application Cards */}
                 <div className="space-y-4">
                   {[
-                    { type: 'H-1B Work Visa', status: 'In Review', progress: 65, statusColor: 'blue' },
-                    { type: 'Green Card (EB-2)', status: 'Documents Needed', progress: 40, statusColor: 'amber' },
+                    { type: 'Temporary Residency (Paraguay)', status: 'In Review', progress: 65, statusColor: 'blue' },
+                    { type: 'Permanent Residency (Paraguay)', status: 'Documents Needed', progress: 40, statusColor: 'amber' },
                   ].map((app, i) => (
                     <div key={i} className="bg-slate-800 rounded-lg p-5 border border-slate-700 hover:border-slate-600 transition-colors">
                       <div className="flex items-center justify-between mb-4">

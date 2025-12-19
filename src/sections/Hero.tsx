@@ -3,7 +3,7 @@ import { useLanguage } from '../i18n';
 export function Hero() {
   const { t } = useLanguage();
 
-  const countries = ['USA', 'Canada', 'UK', 'Germany', 'Australia', 'Spain'];
+  const countries = ['Paraguay', 'USA', 'Brazil', 'Argentina', 'Spain', 'Germany'];
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-cream-100 via-cream-50 to-cream-50">
@@ -148,7 +148,7 @@ export function Hero() {
                           </svg>
                         </div>
                         <div>
-                          <p className="text-xs text-slate-500">H-1B Visa</p>
+                          <p className="text-xs text-slate-500">Temporary Residency</p>
                           <p className="text-sm font-semibold text-slate-900">In Review</p>
                         </div>
                       </div>
