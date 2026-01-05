@@ -25,7 +25,7 @@ export default async function handler(
   try {
     // 1. Send confirmation email to the subscriber
     await resend.emails.send({
-      from: process.env.EMAIL_FROM || 'ResidencyOS <noreply@residencyos.com>',
+      from: process.env.EMAIL_FROM || 'ResidencyOS <noreply@mail.residencyos.com>',
       to: email,
       subject: "You're on the Waitlist — ResidencyOS",
       html: `
@@ -48,7 +48,7 @@ export default async function handler(
     // 2. Send notification to admin (optional)
     if (process.env.ADMIN_EMAIL) {
       await resend.emails.send({
-        from: process.env.EMAIL_FROM || 'ResidencyOS <noreply@residencyos.com>',
+        from: process.env.EMAIL_FROM || 'ResidencyOS <noreply@mail.residencyos.com>',
         to: process.env.ADMIN_EMAIL,
         subject: `New Waitlist Signup: ${email}`,
         html: `
