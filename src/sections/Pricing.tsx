@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { useLanguage } from '../i18n';
+import { useWaitlist } from '../context';
 
 export function Pricing() {
   const { t } = useLanguage();
+  const { openModal } = useWaitlist();
   const [isYearly, setIsYearly] = useState(false);
 
   return (
@@ -120,6 +122,7 @@ export function Pricing() {
 
               {/* CTA */}
               <button
+                onClick={openModal}
                 className={`w-full py-3.5 text-sm font-semibold rounded-lg transition-all ${
                   plan.popular
                     ? 'bg-white text-slate-900 hover:bg-slate-100'

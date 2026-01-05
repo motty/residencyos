@@ -1,7 +1,9 @@
 import { useLanguage } from '../i18n';
+import { useWaitlist } from '../context';
 
 export function CTA() {
   const { t } = useLanguage();
+  const { openModal } = useWaitlist();
 
   return (
     <section className="relative py-24 lg:py-32 bg-slate-900 overflow-hidden">
@@ -44,15 +46,15 @@ export function CTA() {
 
         {/* CTA Button */}
         <div className="mt-10">
-          <a
-            href="#pricing"
+          <button
+            onClick={openModal}
             className="inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-900 text-lg font-semibold rounded-lg hover:bg-slate-100 transition-colors shadow-lg hover:shadow-xl"
           >
             {t.cta.button}
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </button>
         </div>
 
         <p className="mt-4 text-sm text-slate-500">
