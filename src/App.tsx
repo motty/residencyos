@@ -1,5 +1,6 @@
 import { LanguageProvider } from './i18n';
-import { Navigation } from './components';
+import { WaitlistProvider } from './context';
+import { Navigation, WaitlistModal } from './components';
 import {
   Hero,
   Features,
@@ -14,27 +15,32 @@ import {
 function App() {
   return (
     <LanguageProvider>
-      <div className="min-h-screen">
-        {/* Subtle grain overlay for sophistication */}
-        <div className="grain-overlay" />
+      <WaitlistProvider>
+        <div className="min-h-screen">
+          {/* Subtle grain overlay for sophistication */}
+          <div className="grain-overlay" />
 
-        {/* Navigation */}
-        <Navigation />
+          {/* Navigation */}
+          <Navigation />
 
-        {/* Main Content */}
-        <main>
-          <Hero />
-          <Features />
-          <ProductPreview />
-          <HowItWorks />
-          <Testimonials />
-          <Pricing />
-          <CTA />
-        </main>
+          {/* Main Content */}
+          <main>
+            <Hero />
+            <Features />
+            <ProductPreview />
+            <HowItWorks />
+            <Testimonials />
+            <Pricing />
+            <CTA />
+          </main>
 
-        {/* Footer */}
-        <Footer />
-      </div>
+          {/* Footer */}
+          <Footer />
+        </div>
+
+        {/* Waitlist Modal */}
+        <WaitlistModal />
+      </WaitlistProvider>
     </LanguageProvider>
   );
 }

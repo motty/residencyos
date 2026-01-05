@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '../i18n';
+import { useWaitlist } from '../context';
 
 export function Navigation() {
   const { t, language, toggleLanguage } = useLanguage();
+  const { openModal } = useWaitlist();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -95,9 +97,9 @@ export function Navigation() {
             </button>
 
             {/* CTA Button */}
-            <a href="#pricing" className="btn-primary text-sm py-2.5 px-5">
+            <button onClick={openModal} className="btn-primary text-sm py-2.5 px-5">
               {t.nav.getStarted}
-            </a>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -162,13 +164,15 @@ export function Navigation() {
             >
               <span className="uppercase">{language === 'en' ? 'ES' : 'EN'}</span>
             </button>
-            <a
-              href="#pricing"
+            <button
               className="btn-primary flex-1 justify-center text-sm py-2.5"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openModal();
+              }}
             >
               {t.nav.getStarted}
-            </a>
+            </button>
           </div>
         </div>
       </div>

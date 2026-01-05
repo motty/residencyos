@@ -1,7 +1,9 @@
 import { useLanguage } from '../i18n';
+import { useWaitlist } from '../context';
 
 export function Hero() {
   const { t } = useLanguage();
+  const { openModal } = useWaitlist();
 
   const countries = ['Paraguay', 'USA', 'Brazil', 'Argentina', 'Spain', 'Germany'];
 
@@ -70,13 +72,13 @@ export function Hero() {
 
             {/* CTAs */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-in-up opacity-0 delay-300">
-              <a href="#pricing" className="btn-primary text-base py-4 px-8">
+              <button onClick={openModal} className="btn-primary text-base py-4 px-8">
                 <span>{t.hero.cta}</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
-              <button className="btn-secondary text-base py-4 px-8">
+              </button>
+              <button onClick={openModal} className="btn-secondary text-base py-4 px-8">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z" />
                 </svg>

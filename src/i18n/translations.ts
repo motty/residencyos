@@ -216,6 +216,24 @@ export const translations = {
       menuOpen: 'Open menu',
       menuClose: 'Close menu',
     },
+
+    // Waitlist Modal
+    waitlist: {
+      title: 'Join the Waitlist',
+      subtitle: "Due to high demand, we're currently limiting new sign-ups. Enter your email to secure your spot.",
+      placeholder: 'Enter your email',
+      button: 'Join Waitlist',
+      loading: 'Joining...',
+      success: {
+        title: "You're on the list!",
+        message: "We'll reach out soon with access details.",
+      },
+      error: {
+        generic: 'Something went wrong. Please try again.',
+        invalid: 'Please enter a valid email address.',
+      },
+      close: 'Close',
+    },
   },
 
   es: {
@@ -433,6 +451,24 @@ export const translations = {
       menuOpen: 'Abrir menú',
       menuClose: 'Cerrar menú',
     },
+
+    // Waitlist Modal
+    waitlist: {
+      title: 'Unirse a la Lista de Espera',
+      subtitle: 'Debido a la alta demanda, estamos limitando nuevos registros. Ingresa tu email para asegurar tu lugar.',
+      placeholder: 'Ingresa tu email',
+      button: 'Unirse a la Lista',
+      loading: 'Uniéndose...',
+      success: {
+        title: '¡Estás en la lista!',
+        message: 'Te contactaremos pronto con los detalles de acceso.',
+      },
+      error: {
+        generic: 'Algo salió mal. Por favor intenta de nuevo.',
+        invalid: 'Por favor ingresa un email válido.',
+      },
+      close: 'Cerrar',
+    },
   },
 };
 
@@ -537,6 +573,22 @@ interface TranslationSchema {
     languageToggle: string;
     menuOpen: string;
     menuClose: string;
+  };
+  waitlist: {
+    title: string;
+    subtitle: string;
+    placeholder: string;
+    button: string;
+    loading: string;
+    success: {
+      title: string;
+      message: string;
+    };
+    error: {
+      generic: string;
+      invalid: string;
+    };
+    close: string;
   };
 }
 
