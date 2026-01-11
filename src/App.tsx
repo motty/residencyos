@@ -7,7 +7,6 @@ import {
   ProductPreview,
   HowItWorks,
   Testimonials,
-  Pricing,
   CTA,
   Footer,
 } from './sections';
@@ -30,7 +29,6 @@ function App() {
             <ProductPreview />
             <HowItWorks />
             <Testimonials />
-            <Pricing />
             <CTA />
           </main>
 
