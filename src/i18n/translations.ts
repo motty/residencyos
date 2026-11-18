@@ -6,20 +6,16 @@ export const translations = {
     nav: {
       features: 'Features',
       howItWorks: 'How It Works',
-      testimonials: 'Testimonials',
       pricing: 'Pricing',
       getStarted: 'Get Started',
     },
 
     // Hero Section
     hero: {
-      badge: 'Trusted by 10,000+ applicants worldwide',
       title: 'Your Immigration Journey,',
       titleHighlight: 'Simplified',
       subtitle: 'ResidencyOS is the comprehensive platform that organizes your visa applications, tracks deadlines, and guides you through every step of the immigration process with confidence.',
       cta: 'Start Your Journey',
-      secondaryCta: 'Watch Demo',
-      trustedBy: 'Trusted by applicants from',
     },
 
     // Features Section
@@ -44,10 +40,6 @@ export const translations = {
         {
           title: 'Application Timeline',
           description: 'Visualize your entire immigration journey with interactive timelines. Understand where you are and what comes next.',
-        },
-        {
-          title: 'Secure Data Vault',
-          description: 'Bank-level encryption protects your sensitive information. Your data is encrypted at rest and in transit.',
         },
         {
           title: 'Multi-Language Support',
@@ -87,34 +79,6 @@ export const translations = {
           number: '03',
           title: 'Track & Succeed',
           description: 'Monitor your applications in real-time, receive smart reminders, and confidently navigate every step of your journey.',
-        },
-      ],
-    },
-
-    // Testimonials Section
-    testimonials: {
-      label: 'Testimonials',
-      title: 'Trusted by Applicants',
-      titleHighlight: 'Worldwide',
-      subtitle: 'Join thousands of successful applicants who have streamlined their immigration journey with ResidencyOS.',
-      items: [
-        {
-          quote: 'ResidencyOS transformed what felt like an overwhelming process into something manageable. The deadline reminders alone saved me from missing a critical document submission for my Paraguay permanent residency.',
-          author: 'Michael Torres',
-          role: 'Permanent Residency Holder',
-          location: 'USA to Paraguay',
-        },
-        {
-          quote: 'As an immigration consultant specializing in Paraguay, I recommend ResidencyOS to all my clients. It keeps them organized and reduces the back-and-forth significantly.',
-          author: 'Carolina Méndez',
-          role: 'Immigration Consultant',
-          location: 'Asunción, Paraguay',
-        },
-        {
-          quote: 'The document management feature is incredible. Tracking both my temporary and permanent residency applications in one place made the whole process so much easier.',
-          author: 'David Schmidt',
-          role: 'Temporary Residency Applicant',
-          location: 'Germany to Paraguay',
         },
       ],
     },
@@ -181,9 +145,7 @@ export const translations = {
     cta: {
       title: 'Ready to Simplify Your',
       titleHighlight: 'Immigration Journey?',
-      subtitle: 'Join thousands of applicants who trust ResidencyOS to guide them through the immigration process.',
-      button: 'Start Free Trial',
-      note: 'No credit card required. 14-day free trial.',
+      button: 'Join Waitlist',
     },
 
     // Footer
@@ -204,7 +166,6 @@ export const translations = {
         privacy: 'Privacy Policy',
         terms: 'Terms of Service',
         cookies: 'Cookie Policy',
-        gdpr: 'GDPR',
       },
       copyright: '© 2025 ResidencyOS. All rights reserved.',
       madeWith: 'Made with care for immigrants worldwide',
@@ -241,20 +202,16 @@ export const translations = {
     nav: {
       features: 'Funciones',
       howItWorks: 'Cómo Funciona',
-      testimonials: 'Testimonios',
       pricing: 'Precios',
       getStarted: 'Comenzar',
     },
 
     // Hero Section
     hero: {
-      badge: 'Más de 10,000 solicitantes confían en nosotros',
       title: 'Tu Proceso Migratorio,',
       titleHighlight: 'Simplificado',
       subtitle: 'ResidencyOS es la plataforma integral que organiza tus solicitudes de visa, rastrea fechas límite y te guía en cada paso del proceso migratorio con confianza.',
       cta: 'Comienza Tu Viaje',
-      secondaryCta: 'Ver Demo',
-      trustedBy: 'Confían en nosotros solicitantes de',
     },
 
     // Features Section
@@ -279,10 +236,6 @@ export const translations = {
         {
           title: 'Línea de Tiempo',
           description: 'Visualiza todo tu proceso migratorio con líneas de tiempo interactivas. Entiende dónde estás y qué sigue.',
-        },
-        {
-          title: 'Bóveda de Datos Segura',
-          description: 'Encriptación de nivel bancario protege tu información sensible. Tus datos están encriptados en reposo y en tránsito.',
         },
         {
           title: 'Soporte Multilingüe',
@@ -322,34 +275,6 @@ export const translations = {
           number: '03',
           title: 'Rastrea y Triunfa',
           description: 'Monitorea tus solicitudes en tiempo real, recibe recordatorios inteligentes y navega con confianza cada paso de tu viaje.',
-        },
-      ],
-    },
-
-    // Testimonials Section
-    testimonials: {
-      label: 'Testimonios',
-      title: 'Solicitantes Confían en',
-      titleHighlight: 'Todo el Mundo',
-      subtitle: 'Únete a miles de solicitantes exitosos que han simplificado su proceso migratorio con ResidencyOS.',
-      items: [
-        {
-          quote: 'ResidencyOS transformó lo que parecía un proceso abrumador en algo manejable. Solo los recordatorios de fechas me salvaron de perder una entrega crítica de documentos para mi residencia permanente en Paraguay.',
-          author: 'Michael Torres',
-          role: 'Titular de Residencia Permanente',
-          location: 'EE.UU. a Paraguay',
-        },
-        {
-          quote: 'Como consultora de inmigración especializada en Paraguay, recomiendo ResidencyOS a todos mis clientes. Los mantiene organizados y reduce significativamente la comunicación innecesaria.',
-          author: 'Carolina Méndez',
-          role: 'Consultora de Inmigración',
-          location: 'Asunción, Paraguay',
-        },
-        {
-          quote: 'La función de gestión de documentos es increíble. Rastrear mis solicitudes de residencia temporal y permanente en un solo lugar hizo todo el proceso mucho más fácil.',
-          author: 'David Schmidt',
-          role: 'Solicitante de Residencia Temporal',
-          location: 'Alemania a Paraguay',
         },
       ],
     },
@@ -416,9 +341,7 @@ export const translations = {
     cta: {
       title: '¿Listo para Simplificar Tu',
       titleHighlight: 'Proceso Migratorio?',
-      subtitle: 'Únete a miles de solicitantes que confían en ResidencyOS para guiarlos en el proceso de inmigración.',
-      button: 'Prueba Gratis',
-      note: 'Sin tarjeta de crédito. Prueba gratuita de 14 días.',
+      button: 'Unirse a la Lista',
     },
 
     // Footer
@@ -439,7 +362,6 @@ export const translations = {
         privacy: 'Política de Privacidad',
         terms: 'Términos de Servicio',
         cookies: 'Política de Cookies',
-        gdpr: 'RGPD',
       },
       copyright: '© 2025 ResidencyOS. Todos los derechos reservados.',
       madeWith: 'Hecho con cariño para inmigrantes en todo el mundo',
@@ -485,18 +407,14 @@ interface TranslationSchema {
   nav: {
     features: string;
     howItWorks: string;
-    testimonials: string;
     pricing: string;
     getStarted: string;
   };
   hero: {
-    badge: string;
     title: string;
     titleHighlight: string;
     subtitle: string;
     cta: string;
-    secondaryCta: string;
-    trustedBy: string;
   };
   features: {
     label: string;
@@ -520,13 +438,6 @@ interface TranslationSchema {
     subtitle: string;
     steps: { number: string; title: string; description: string }[];
   };
-  testimonials: {
-    label: string;
-    title: string;
-    titleHighlight: string;
-    subtitle: string;
-    items: { quote: string; author: string; role: string; location: string }[];
-  };
   pricing: {
     label: string;
     title: string;
@@ -543,9 +454,7 @@ interface TranslationSchema {
   cta: {
     title: string;
     titleHighlight: string;
-    subtitle: string;
     button: string;
-    note: string;
   };
   footer: {
     description: string;
@@ -564,7 +473,6 @@ interface TranslationSchema {
       privacy: string;
       terms: string;
       cookies: string;
-      gdpr: string;
     };
     copyright: string;
     madeWith: string;

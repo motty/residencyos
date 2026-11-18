@@ -60,12 +60,6 @@ export function Navigation() {
               {t.nav.howItWorks}
             </a>
             <a
-              href="#testimonials"
-              className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors duration-200"
-            >
-              {t.nav.testimonials}
-            </a>
-            <a
               href="#pricing"
               className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors duration-200"
             >
@@ -123,7 +117,7 @@ export function Navigation() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 bg-cream-50/98 backdrop-blur-lg border-t border-slate-100 transition-all duration-300 ${
+        className={`md:hidden absolute top-full left-0 right-0 bg-cream-50/95 backdrop-blur-lg border-t border-slate-100 transition-all duration-300 ${
           isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
@@ -141,13 +135,6 @@ export function Navigation() {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {t.nav.howItWorks}
-          </a>
-          <a
-            href="#testimonials"
-            className="block text-base font-medium text-slate-700 hover:text-slate-900"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            {t.nav.testimonials}
           </a>
           <a
             href="#pricing"
