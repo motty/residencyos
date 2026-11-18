@@ -87,7 +87,7 @@ export function Footer() {
               {t.footer.legal}
             </h4>
             <ul className="space-y-4">
-              {[t.footer.links.privacy, t.footer.links.terms, t.footer.links.cookies, t.footer.links.gdpr].map((link) => (
+              {[t.footer.links.privacy, t.footer.links.terms, t.footer.links.cookies].map((link) => (
                 <li key={link}>
                   <a href="#" className="text-sm hover:text-white transition-colors">
                     {link}

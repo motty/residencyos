@@ -5,8 +5,6 @@ export function Hero() {
   const { t } = useLanguage();
   const { openModal } = useWaitlist();
 
-  const countries = ['Paraguay', 'USA', 'Brazil', 'Argentina', 'Spain', 'Germany'];
-
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-cream-100 via-cream-50 to-cream-50">
       {/* Decorative Background Elements */}
@@ -30,19 +28,6 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           {/* Left Content */}
           <div className="max-w-2xl">
-            {/* Trust Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-slate-200/60 shadow-sm mb-8 animate-fade-in-up opacity-0">
-              <div className="flex -space-x-2">
-                {[0, 1, 2, 3].map((i) => (
-                  <div
-                    key={i}
-                    className="w-6 h-6 rounded-full bg-gradient-to-br from-slate-300 to-slate-400 border-2 border-white"
-                  />
-                ))}
-              </div>
-              <span className="text-sm font-medium text-slate-600">{t.hero.badge}</span>
-            </div>
-
             {/* Headline */}
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold text-slate-900 leading-[1.1] tracking-tight animate-fade-in-up opacity-0 delay-100">
               {t.hero.title}
@@ -78,27 +63,6 @@ export function Hero() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </button>
-              <button onClick={openModal} className="btn-secondary text-base py-4 px-8">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                <span>{t.hero.secondaryCta}</span>
-              </button>
-            </div>
-
-            {/* Trusted Countries */}
-            <div className="mt-14 animate-fade-in-up opacity-0 delay-400">
-              <p className="text-sm text-slate-500 mb-4">{t.hero.trustedBy}</p>
-              <div className="flex flex-wrap gap-3">
-                {countries.map((country) => (
-                  <span
-                    key={country}
-                    className="px-3 py-1.5 text-sm font-medium text-slate-600 bg-white/60 border border-slate-200/60 rounded-sm"
-                  >
-                    {country}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
 
@@ -219,20 +183,6 @@ export function Hero() {
                   <div>
                     <p className="text-sm font-semibold text-slate-900">Documents Verified</p>
                     <p className="text-xs text-slate-500">Just now</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute -bottom-4 -left-6 bg-white rounded-lg p-4 shadow-elevated border border-slate-200/60 animate-fade-in-up opacity-0 delay-600">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-slate-900">256-bit Encrypted</p>
-                    <p className="text-xs text-slate-500">Bank-level security</p>
                   </div>
                 </div>
               </div>

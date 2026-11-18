@@ -1,12 +1,5 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
-
-interface WaitlistContextType {
-  isOpen: boolean;
-  openModal: () => void;
-  closeModal: () => void;
-}
-
-const WaitlistContext = createContext<WaitlistContextType | undefined>(undefined);
+import { useState, useCallback, type ReactNode } from 'react';
+import { WaitlistContext } from './useWaitlist';
 
 export function WaitlistProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,12 +12,4 @@ export function WaitlistProvider({ children }: { children: ReactNode }) {
       {children}
     </WaitlistContext.Provider>
   );
-}
-
-export function useWaitlist() {
-  const context = useContext(WaitlistContext);
-  if (!context) {
-    throw new Error('useWaitlist must be used within WaitlistProvider');
-  }
-  return context;
 }
