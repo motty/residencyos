@@ -1,1 +1,2 @@
-export { WaitlistProvider, useWaitlist } from './WaitlistContext';
+export { WaitlistProvider } from './WaitlistContext';
+export { useWaitlist } from './useWaitlist';
